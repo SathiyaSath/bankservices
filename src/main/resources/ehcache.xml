@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache updateCheck="false" name="bankCacheFacory">
+
+	<defaultCache maxElementsInMemory="2000" eternal="true"
+		overflowToDisk="false" timeToLiveSeconds="1200" />
+
+	<cache name="demoCache" maxElementsInMemory="2000" eternal="false"
+		overflowToDisk="false" timeToLiveSeconds="10000" />
+
+	<cache name="namespaceCache" maxElementsInMemory="1000"
+		maxElementsOnDisk="0" eternal="false" timeToIdleSeconds="108000"
+		timeToLiveSeconds="0" memoryStoreEvictionPolicy="LFU">
+	</cache>
+	<cache name="userCache" maxElementsInMemory="1000"
+		maxElementsOnDisk="0" eternal="false" timeToIdleSeconds="108000"
+		timeToLiveSeconds="0" memoryStoreEvictionPolicy="LFU">
+	</cache>
+
+</ehcache>
